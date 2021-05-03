@@ -65,7 +65,7 @@ problem_mapping = {
                 "passed": 0,
                 "total": 10000
             },
-            "Python: closest_int_same_weight.py": { 
+            "Python: closest_int_same_weight.py": {
                 "passed": 0,
                 "total": 10000
             }
@@ -114,7 +114,7 @@ problem_mapping = {
         },
         "4.08 Reverse digits": {
             "C++: reverse_digits.cc": {
-                "passed": 0,
+                "passed": 19952,
                 "total": 19952
             },
             "Java: ReverseDigits.java": {
@@ -200,7 +200,7 @@ problem_mapping = {
         },
         "5.02 Increment an arbitrary-precision integer": {
             "C++: int_as_array_increment.cc": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Java: IntAsArrayIncrement.java": {
@@ -410,7 +410,7 @@ problem_mapping = {
         },
         "5.17 The Sudoku checker problem": {
             "C++: is_valid_sudoku.cc": {
-                "passed": 0,
+                "passed": 745,
                 "total": 745
             },
             "Java: IsValidSudoku.java": {
@@ -438,7 +438,7 @@ problem_mapping = {
         },
         "5.19 Rotate a 2D array": {
             "C++: matrix_rotation.cc": {
-                "passed": 0,
+                "passed": 51,
                 "total": 51
             },
             "Java: MatrixRotation.java": {
@@ -538,7 +538,7 @@ problem_mapping = {
         },
         "6.05 Test palindromicity": {
             "C++: is_string_palindromic_punctuation.cc": {
-                "passed": 0,
+                "passed": 305,
                 "total": 305
             },
             "Java: IsStringPalindromicPunctuation.java": {
@@ -552,7 +552,7 @@ problem_mapping = {
         },
         "6.06 Reverse all the words in a sentence": {
             "C++: reverse_words.cc": {
-                "passed": 0,
+                "passed": 103,
                 "total": 103
             },
             "Java: ReverseWords.java": {
@@ -1980,7 +1980,7 @@ problem_mapping = {
         },
         "15.02 Compute all mnemonics for a phone number": {
             "C++: phone_number_mnemonic.cc": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Java: PhoneNumberMnemonic.java": {
@@ -2008,7 +2008,7 @@ problem_mapping = {
         },
         "15.04 Generate permutations": {
             "C++: permutations.cc": {
-                "passed": 0,
+                "passed": 8,
                 "total": 8
             },
             "Java: Permutations.java": {

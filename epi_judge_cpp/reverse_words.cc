@@ -5,7 +5,32 @@
 using std::string;
 
 void ReverseWords(string* s) {
-  // TODO - you fill in here.
+  string &ss = *s;
+  char sp = ' ';
+  reverse(ss.begin(), ss.end());
+
+  int i = -1, j = 0, n = ss.size();
+  while (j < n) {
+    if ((char)ss[j] == sp) {
+      int t = j - 1;
+      i++;
+      while (i < t) {
+        std::swap(ss[i], ss[t]);
+        i++;
+        t--;
+      }
+      i = j;
+    }
+    j++;
+  }
+
+  i++;j--;
+  while (i < j) {
+    std::swap(ss[i], ss[j]);
+    i++;
+    j--;
+  }
+
   return;
 }
 string ReverseWordsWrapper(TimedExecutor& executor, string s) {

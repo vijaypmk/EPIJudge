@@ -4,9 +4,29 @@
 #include "test_framework/generic_test.h"
 using std::string;
 using std::vector;
+
+const vector<string> val = {"0", "1", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
+
+void rec_ph(const string& ph, const int c, vector<string>& res) {
+  static string r;
+  if (ph.size() == c) {
+    res.emplace_back(r);
+    return;
+  }
+
+  int p = ph[c] - '0';
+  for (char i : val[p]) {
+    r.push_back(i);
+    rec_ph(ph, c + 1, res);
+    r.pop_back();
+  }
+}
+
+
 vector<string> PhoneMnemonic(const string& phone_number) {
-  // TODO - you fill in here.
-  return {};
+  vector<string> res;
+  rec_ph(phone_number, 0, res);
+  return res;
 }
 
 int main(int argc, char* argv[]) {

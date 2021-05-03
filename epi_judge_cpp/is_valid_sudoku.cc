@@ -4,7 +4,17 @@
 using std::vector;
 // Check if a partially filled matrix has any conflicts.
 bool IsValidSudoku(const vector<vector<int>>& partial_assignment) {
-  // TODO - you fill in here.
+  bool row[9][9] = {false}, col[9][9] = {false}, box[9][9] = {false};
+  for (int i = 0; i < 9; i++)
+    for(int j = 0; j < 9; j++) {
+        int num = partial_assignment[i][j] - 1;
+        if (num < 0)
+          continue;
+        int k = (i / 3) * 3 + (j / 3);
+        if (row[i][num] || col[j][num] || box[k][num])
+          return false;
+        row[i][num] = col[j][num] = box[k][num] = true;
+    }
   return true;
 }
 
