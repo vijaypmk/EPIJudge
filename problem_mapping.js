@@ -732,7 +732,7 @@ problem_mapping = {
         },
         "7.04 Test for overlapping lists---lists are cycle-free": {
             "C++: do_terminated_lists_overlap.cc": {
-                "passed": 0,
+                "passed": 106,
                 "total": 106
             },
             "Java: DoTerminatedListsOverlap.java": {
@@ -774,7 +774,7 @@ problem_mapping = {
         },
         "7.07 Remove the kth last element from a list": {
             "C++: delete_kth_last_from_list.cc": {
-                "passed": 0,
+                "passed": 306,
                 "total": 306
             },
             "Java: DeleteKthLastFromList.java": {
@@ -888,7 +888,7 @@ problem_mapping = {
         },
         "8.02 Evaluate RPN expressions": {
             "C++: evaluate_rpn.cc": {
-                "passed": 0,
+                "passed": 108,
                 "total": 108
             },
             "Java: EvaluateRpn.java": {
@@ -958,7 +958,7 @@ problem_mapping = {
         },
         "8.07 Implement a circular queue": {
             "C++: circular_queue.cc": {
-                "passed": 0,
+                "passed": 65,
                 "total": 65
             },
             "Java: CircularQueue.java": {
@@ -1002,7 +1002,7 @@ problem_mapping = {
     "Chapter 09: Binary Trees": {
         "9.01 Test if a binary tree is height-balanced": {
             "C++: is_tree_balanced.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: IsTreeBalanced.java": {
@@ -1016,7 +1016,7 @@ problem_mapping = {
         },
         "9.02 Test if a binary tree is symmetric": {
             "C++: is_tree_symmetric.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: IsTreeSymmetric.java": {
@@ -1142,7 +1142,7 @@ problem_mapping = {
         },
         "9.11 Reconstruct a binary tree from traversal data": {
             "C++: tree_from_preorder_inorder.cc": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Java: TreeFromPreorderInorder.java": {
@@ -1214,7 +1214,7 @@ problem_mapping = {
     "Chapter 10: Heaps": {
         "10.01 Merge sorted files": {
             "C++: sorted_arrays_merge.cc": {
-                "passed": 0,
+                "passed": 152,
                 "total": 152
             },
             "Java: SortedArraysMerge.java": {
@@ -1242,7 +1242,7 @@ problem_mapping = {
         },
         "10.03 Sort an almost-sorted array": {
             "C++: sort_almost_sorted_array.cc": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Java: SortAlmostSortedArray.java": {
@@ -1300,7 +1300,7 @@ problem_mapping = {
     "Chapter 11: Searching": {
         "11.01 Search a sorted array for first occurrence of k": {
             "C++: search_first_key.cc": {
-                "passed": 0,
+                "passed": 314,
                 "total": 314
             },
             "Java: SearchFirstKey.java": {
@@ -1328,7 +1328,7 @@ problem_mapping = {
         },
         "11.03 Search a cyclically sorted array": {
             "C++: search_shifted_sorted_array.cc": {
-                "passed": 0,
+                "passed": 307,
                 "total": 307
             },
             "Java: SearchShiftedSortedArray.java": {
@@ -1456,7 +1456,7 @@ problem_mapping = {
         },
         "12.01 Test for palindromic permutations": {
             "C++: is_string_permutable_to_palindrome.cc": {
-                "passed": 0,
+                "passed": 305,
                 "total": 305
             },
             "Java: IsStringPermutableToPalindrome.java": {
@@ -1512,7 +1512,7 @@ problem_mapping = {
         },
         "12.05 Find the nearest repeated entries in an array": {
             "C++: nearest_repeated_entries.cc": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             },
             "Java: NearestRepeatedEntries.java": {
@@ -1612,7 +1612,7 @@ problem_mapping = {
     "Chapter 13: Sorting": {
         "13.01 Compute the intersection of two sorted arrays": {
             "C++: intersect_sorted_arrays.cc": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Java: IntersectSortedArrays.java": {
@@ -1682,7 +1682,7 @@ problem_mapping = {
         },
         "13.06 Render a calendar": {
             "C++: calendar_rendering.cc": {
-                "passed": 0,
+                "passed": 97,
                 "total": 97
             },
             "Java: CalendarRendering.java": {
@@ -2176,7 +2176,7 @@ problem_mapping = {
         },
         "16.03 Count the number of ways to traverse a 2D array": {
             "C++: number_of_traversals_matrix.cc": {
-                "passed": 0,
+                "passed": 1775,
                 "total": 1775
             },
             "Java: NumberOfTraversalsMatrix.java": {
@@ -2218,7 +2218,7 @@ problem_mapping = {
         },
         "16.06 The knapsack problem": {
             "C++: knapsack.cc": {
-                "passed": 0,
+                "passed": 100,
                 "total": 100
             },
             "Java: Knapsack.java": {
@@ -2458,7 +2458,7 @@ problem_mapping = {
     "Chapter 18: Graphs": {
         "18.01 Search a maze": {
             "C++: search_maze.cc": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Java: SearchMaze.java": {
@@ -2472,7 +2472,7 @@ problem_mapping = {
         },
         "18.02 Paint a Boolean matrix": {
             "C++: matrix_connected_regions.cc": {
-                "passed": 0,
+                "passed": 50,
                 "total": 50
             },
             "Java: MatrixConnectedRegions.java": {

@@ -15,10 +15,32 @@ struct Coordinate {
 
   int x, y;
 };
+
+
+bool dfs(vector<vector<Color>>& m, const Coordinate& s, const Coordinate& e, vector<Coordinate>& res) {
+  if (s.x >= m.size() || s.y >= m[0].size() || s.x < 0 || s.y < 0)
+    return false;
+  if (m[s.x][s.y] != Color::kWhite)
+    return false;
+  res.emplace_back(s);
+  m[s.x][s.y] = Color::kBlack;
+  if (s == e)
+    return true;
+  
+  for (auto c : vector<Coordinate> {{s.x, s.y + 1}, {s.x + 1, s.y}, {s.x, s.y - 1}, {s.x - 1, s.y}}) {
+    if(dfs(m, c, e, res))
+      return true;
+  }
+  res.pop_back();
+  return false;
+}
+
+
 vector<Coordinate> SearchMaze(vector<vector<Color>> maze, const Coordinate& s,
                               const Coordinate& e) {
-  // TODO - you fill in here.
-  return {};
+  vector<Coordinate> res;
+  dfs(maze, s, e, res);
+  return res;
 }
 
 namespace test_framework {

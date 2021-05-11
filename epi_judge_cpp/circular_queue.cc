@@ -1,20 +1,58 @@
+#include <algorithm>
+#include <iterator>
+#include <stdexcept>
+#include <vector>
+
 #include "test_framework/generic_test.h"
 #include "test_framework/serialization_traits.h"
 #include "test_framework/test_failure.h"
+
+using std::length_error;
+using std::rotate;
+using std::vector;
+
 class Queue {
+  vector<int> q;
+  size_t s, c;
+  int h, t;
  public:
-  Queue(size_t capacity) {}
+  Queue(size_t capacity) {
+    s = capacity;
+    q.resize(s);
+    c = 0;
+    h = t = 0;
+  }
+
+  void re_size() {
+    rotate(q.begin(), q.begin() + h, q.end());
+    s += s;
+    q.resize(s);
+    h = 0;
+    t = c;
+  }
+
   void Enqueue(int x) {
-    // TODO - you fill in here.
-    return;
+    if(c == q.size())
+      re_size();
+    q[t] = x;
+    t = (t + 1) % s;
+    c++;
+
+    if (h < 0)
+      h = 0;
   }
   int Dequeue() {
-    // TODO - you fill in here.
-    return 0;
+    if (c == 0)
+      return 0;
+    
+    int temp = q[h];
+    h = (h + 1) % s;
+    c--;
+    
+    return temp;
   }
   int Size() const {
-    // TODO - you fill in here.
-    return 0;
+    return c;
   }
 };
 struct QueueOp {

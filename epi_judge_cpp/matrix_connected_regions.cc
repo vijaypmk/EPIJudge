@@ -1,13 +1,26 @@
 #include <deque>
 #include <vector>
+#include <initializer_list>
+#include <utility>
 
 #include "test_framework/generic_test.h"
 #include "test_framework/timed_executor.h"
 using std::deque;
 using std::vector;
+using std::pair;
+using std::initializer_list;
+
 
 void FlipColor(int x, int y, vector<deque<bool>>* image_ptr) {
-  // TODO - you fill in here.
+  vector<deque<bool>> &m = *image_ptr;
+  
+  const bool color = m[x][y];
+  m[x][y] = !color;
+  for (const auto &[i, j] : initializer_list<pair<int, int>> {{x, y + 1}, {x, y - 1}, {x + 1, y}, {x - 1, y}}) {
+    if (i >= 0 && j >= 0 && i < m.size() && j < m[0].size() && m[i][j] == color)
+      FlipColor(i, j, image_ptr);
+  }
+
   return;
 }
 vector<vector<int>> FlipColorWrapper(TimedExecutor& executor, int x, int y,
